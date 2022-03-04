@@ -113,7 +113,6 @@ public final class Main {
         @Override
         public String handle(Request req, Response res) throws JSONException {
             // TODO: Get JSONObject from req and use it to get the value of the sun, moon, and rising for generating matches
-
             JSONObject jsonObject = new JSONObject(req.body());
             String sun = jsonObject.getString("sun");
             String moon = jsonObject.getString("moon");
